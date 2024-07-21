@@ -5,6 +5,7 @@
     background-color: #101728;
     color: white;
 }
+/*-----Início header-----*/
 nav{
     display: flex;
     align-items: center;
@@ -34,7 +35,8 @@ li:hover{
     display: none;
     cursor: pointer;
 }
-
+/*-----Fim header-----*/
+/*-----Início principal -----*/
 .port{
    color: white;
    font-size: 50px;
@@ -95,7 +97,8 @@ li:hover{
     border: 3px solid blueviolet;
     transition: 0.5s;
 }
-
+/*-----Fim principal -----*/
+/*-----Início sobre -----*/
 .sele{
     visibility: hidden;
 }
@@ -142,8 +145,107 @@ section div button:hover{
     border: 3px solid blueviolet;
     transition: 0.5s;
 }
-
-
+/*-----Fim sobre-----*/
+/*-----Início formulário -----*/
+.forms{
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #1d1d2e;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.forms h2{
+    background-color: transparent;
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    background-color: transparent;
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    background-color: white;
+    color: #000;
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    color: #000;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    background-color: white;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+/*-----Fim formulário -----*/
+/*-----Início Pág Obrigado-----*/
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+ .text{
+     font-size: 45px;
+     color: #f5f5f5;
+     margin-bottom: 30px;
+}
+ .paragrafo{
+     color: #f5f5f5;
+     margin-bottom: 50px;
+}
+ .btn{
+     padding: 15px 55px;
+     background: #f5f5f5;
+     text-decoration: none;
+     color: #101026;
+     font-size: 18px;
+     transition: all 0.5s;
+}
+ .btn:hover{
+    border-radius: 16px;
+}
   .tecno{
     margin-top: 100px;
     text-align: center;
@@ -162,7 +264,8 @@ section div button:hover{
     height: 100vh;
     width: 160vh;
 }
-
+/*-----Fim pág obrigado-----*/
+/*-----Início footer-----*/
 .contato{
     visibility: hidden;
 }
@@ -190,8 +293,8 @@ footer p{
     transform: scale(1.3);
     transition: 0.5s;
 }
-
-@media (max-width: 420px){
+/*-----Fim footer -----*/
+@media (max-width: 360px){
     *{
         overflow-x: hidden;
     }
@@ -279,8 +382,8 @@ footer p{
     .principal img{ 
         height: 300px;
         width: 300px;  
-        margin-top: 30%;
-        margin-left: 50px;
+        margin-top: 60%;
+        margin-left: 30px;
     }
     
     section{
@@ -288,13 +391,13 @@ footer p{
     }
     section img{
         height:200px;
-        margin-left: 20%;
+        margin-left: 10%;
         border-radius: 100%;
         border: 2px solid white;
     }
     section div h2{ 
        color: white;
-       margin-left: 25%;
+       margin-left: 15%;
        font-size: 50px; 
        font-family: "Itim", cursive;
        font-style: normal;
@@ -308,4 +411,13 @@ footer p{
    section div button{
     margin-left: 35%;
    }
+   .tecno img{
+    width: 100%;
+    height: 50%;
+   }
+   .forms{
+    margin-left: 10px;
+    width: 95%;
+   }
+   
 }

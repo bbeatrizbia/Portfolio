@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Maria Beatriz - portfólio</title>
 </head>
 <body>
+<!-----Início princpal ----->
     <div class="principal" id="home">
+<!-----Início header----->
       <header>
         <nav>
             <h2 class="port"> Portfó<span>lio</span></h2>
@@ -23,7 +25,7 @@
           <div class="abrir" id="abrir">
             <ion-icon name="menu-outline"></ion-icon>
         </div>
-
+<!----------Início mobile ---------->
         <div class="mobile" id="mobile">
             <div class="fechar">
                 <ion-icon name="close-outline"></ion-icon>
@@ -36,10 +38,11 @@
                   <a href="#contatos"><li>Contatos</li></a>
                 </ul>
             </nav>
-    
         </div>
         <div class="base" id="base"></div>
+<!----------Fim mobile ---------->
       </header>
+<!-----Fim header ----->
             <div class="esp">
            <div class="info">
                 <h2>Maria Beatriz</h2>
@@ -50,7 +53,8 @@
             </div>
         
     </div>
-
+<!-----Fim principal ----->
+<!-----Início sobre----->
     <section class="sele" id="sobre">
         <img src="img/foto.png" alt="">
         <div id="sbr">
@@ -72,13 +76,7 @@
         <button>Entre em contato</button>
         </div>
     </section>
-
-    <div class="projetos" id="meus-projetos">
-        <h2>Meus Projetos</h2>
-          
-            
-    </div>
-
+<!-----Fim sobre----->
     <div class="tecno" id="experiencia">
         <h2>Experiências</h2>
         <div class="icon">
@@ -86,10 +84,27 @@
         </div>
         
     </div>
+<!-----Início formulário----->
+    <section class="forms">
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
 
+            <input type="hidden" name="accessKey" value="f1f3e778-ff13-4ee0-a7f6-9208664569e7">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/retorn.html">
+        </form>
+    </section>
+<!-----Fim formulário----->
+<!-----Início footer----->
     <footer class="contato" id="contatos">
    
-        <p>Entre em contato via:</p>
+        <p>Para mais informações:</p>
 
         <div class="social">
             <a href="https://www.linkedin.com/in/maria-beatriz-04a747269/" target="_blank"><img src="https://img.shields.io/badge/linkedin-azul?style=for-the-badge&logo=linkedin&logoColor=white&color=blue" alt=""></a>
@@ -99,8 +114,9 @@
         </div>
         
     </footer>
+<!------Fim footer---->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="script.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
