@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="menu">
             <li>
                     <a href="#sobre">Sobre mim</a>
                     <a href="#projetos">Projetos</a>
@@ -19,8 +19,28 @@
                 <a href="inglês/version_english.html"><img src="img/eua.png" alt="" id="pais"></a>
                 <a href="index.html"><img src="img/brasil.png" alt="" id="pais"></a>
             </div>
-        
         </nav>
+
+        <div class="abrir" id="abrir">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+
+        <div class="mobile" id="mobile">
+            <div class="fechar">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sobre">Sobre mim</a>
+                        <a href="#projetos">Projetos</a>
+                        <a href="#contatos">Contatos</a>            
+                    </li>
+                </ul>
+            </nav>
+    
+        </div>
+        <div class="base" id="base"></div>
     </header>
 
     <section class="infos">
@@ -179,6 +199,7 @@
 
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="script.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

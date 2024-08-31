@@ -3,6 +3,9 @@
     overflow-x: hidden;
     color: black;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     max-width: 1300px;
     margin: auto;
@@ -53,6 +56,14 @@ nav li a::after{
 }
 li a:hover::after{
     width: 100%;
+}
+.abrir{
+    display: none;
+    cursor: pointer;
+}
+.mobile{
+    display: none;
+    cursor: pointer;
 }
 /*-----  -----*/
 .infos{
@@ -403,4 +414,144 @@ footer p{
     color: white;
     font-size: 20px;
     padding: 10px 10px;
+}
+
+@media (max-width:400px){
+    #menu{
+        display: none;
+    }
+    .abrir{
+        display: block;
+        color: #ffffff;
+        font-size: 40px;
+        margin-left: 80%;
+        top: 0px;
+    }
+    .mobile{
+        display: block;
+        background-color: #353a44;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        width: 0%;
+        transition: .3s;
+    }
+    .mobile.open{
+        width: 50%;
+    }
+    .mobile.open ~ .base{
+        display: block;
+    }
+    .mobile .fechar {
+        color: #ffffff;
+        height: 28px;
+        font-size: 40px;
+    }
+    .mobile .fechar:hover{
+        background-color: rgb(46, 133, 233);
+    }
+    .mobile nav ul{
+        list-style: none;
+    }
+    .mobile nav ul li{
+        padding: 20px;
+        text-align: center;
+        display: block;
+        color: #fff;
+    }
+    .mobile nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    .mobile li a:hover{
+        background-color: rgb(46, 133, 233);
+    }
+    .base{
+        background-color: rgba(0, 0, 0, 0.596);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8888;
+        display: none;
+    }
+    .infos{
+        width: 100%;
+        height: 250px;
+        
+    }
+    .infos h1{
+        font-size: 2.5rem;
+        margin-left: 5%;
+    }
+    .infos h3{
+        font-size: 1rem;
+        margin: 3%;
+        margin-left: 5%;
+    }
+    
+.sobre h1{
+    font-size: 2rem;
+}
+.sobre h3{
+    font-size: 1.5rem;
+    margin-top: 43%;
+    position: absolute;
+    margin-left: 25%
+}
+.texto{   
+    height: 100vh;
+}
+.forma{
+    position: absolute;
+    top: 75%;
+    left: 27%;
+    width: 25%;
+    height: 27%;
+    border: 7px solid #2525da;
+}
+.texto img{
+    top: 77%;
+    left: 32%;
+    width: 30%;
+}
+.texto p{
+    margin-top: 55%;
+    margin-left: 0%;
+    width: 75%;
+    text-align: justify;
+}
+.texto ion-icon{
+    font-size: 5rem;
+    top: 70%;
+    margin-left: 65%;
+    position: absolute;
+    animation: roda 5s infinite linear;
+}
+.linha{
+    top: 162%;
+    left: 15%;
+    width: 70%;
+}
+.sobre .botao{
+    left: 13%;
+    top: 165%;
+    height: 100vh;
+    margin-bottom: 10%;
+}
+.sobre .botao a{
+    margin-bottom: 10%;  
+    font-size: 1rem;
+    margin: 5px;
+    text-decoration: none;
+}
+.sobre .botao a ion-icon{
+    font-size: 1.5rem;
+}
 }
